@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,500;1,700&display=swap");
 
 * {
   padding: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   min-height: 100svh;
   background-color: slategray;
   padding: 1.3rem;
@@ -23,12 +23,29 @@ body {
   grid-template-columns: 1.2fr 1fr;
 }
 
-.year-month {
-  background-color: brown;
+.day, .year-month {
   padding: 0.7rem;
-  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.day {
-  padding: 0.7rem;
+.year-month {
+  background-color: rgb(228, 35, 35);
+  border-radius: 0 4px 4px 0;
+  color: aliceblue;
+   font-size: 1.3rem;
+}
+
+.wrapper .day #day-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0D0D0D;
+}
+
+.wrapper .day #week-day {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #0D0D0D;
 }
